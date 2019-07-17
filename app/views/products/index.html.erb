@@ -4,6 +4,7 @@
 <% end %>
 
 <% if !@cart.nil? %>
+<% binding.pry %>
     <%= @cart.each do |item| %>
         <%= item %>
     <% end %>
