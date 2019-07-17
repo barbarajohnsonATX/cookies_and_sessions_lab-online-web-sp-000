@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   
   root :to => "products#index"
   
-  #homepage adds items to cart when submitted
+  #homepage adds items to cart when form is submitted
   post :products, :to => "products#add"
   
   resources :products, only: [:index, :add]
