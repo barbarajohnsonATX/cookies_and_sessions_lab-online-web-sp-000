@@ -3,4 +3,7 @@ class ProductsController < ApplicationController
     @cart =  session[:cart]
   end 
   
+  def add 
+  end 
+  
 end 
