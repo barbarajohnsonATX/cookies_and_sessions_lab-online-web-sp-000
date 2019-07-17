@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   
   def cart 
     #return array of items stored in cart 
-    session[:cart] = session[:cart] || []
+    session[:cart] ||= []
   end 
   
   def index 
