@@ -4,6 +4,9 @@ class ProductsController < ApplicationController
   end 
   
   def add 
+    cart << params[:item]
+    redirect_to '/'
   end 
-  
+
+    
 end 
