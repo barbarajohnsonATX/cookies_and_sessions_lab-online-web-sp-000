@@ -9,8 +9,6 @@ class ApplicationController < ActionController::Base
     #return array of items stored in cart 
     session[:cart] ||= []
   end 
-  
-  def index 
-  end 
+ 
   
 end
